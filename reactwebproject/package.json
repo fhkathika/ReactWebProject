@@ -1,0 +1,41 @@
+{
+  "name": "rannaghor",
+  "version": "1.0.0",
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "dependencies": {
+  
+    "express": "^4.17.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-icons": "^4.2.0",
+    "react-items-carousel": "^2.8.0",
+    "react-js-banner": "^0.5.2",
+    "react-responsive-image": "^5.0.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^4.0.3",
+    "react-slick": "^0.28.0",
+    "slick-carousel": "^1.8.1",
+    "web-vitals": "^1.1.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.13.14",
+    "@babel/core": "^7.13.14",
+    "@babel/node": "^7.13.13",
+    "@babel/preset-env": "^7.13.12",
+    "nodemon": "^2.0.7"
+  },
+  "scripts": {
+    "start": "nodemon --watch backend --exec babel-node bckend/srvr.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fhkathika/ReactWebProject.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fhkathika/ReactWebProject/issues"
+  },
+  "homepage": "https://github.com/fhkathika/ReactWebProject#readme"
+}
