@@ -1,7 +1,7 @@
 import React from 'react';
 import ImageSlider from '../components/Slider';
 import Slider from '../components/Slider'
-
+import { Link } from 'react-router-dom';
 import ReactDOM from 'react-dom'
 
 // const ProductItem = ({ category, name }) => (
@@ -10,7 +10,7 @@ import ReactDOM from 'react-dom'
 //       <div className={`category--${category} circle`} />
 //     </div>
 //   );
-  
+
 //   const ProductItems = ({ state: { products, displayCategory } }) => (
 //     <div>
 //       {products
@@ -26,7 +26,7 @@ import ReactDOM from 'react-dom'
 //         ))}
 //     </div>
 //   );
-  
+
 //   const ButtonCategories = (productCategories, setCategory) =>
 // productCategories.map(category => (
 //       <button
@@ -37,7 +37,7 @@ import ReactDOM from 'react-dom'
 //       {category}
 //       </button>
 //     ));
-  
+
 //   const UI = ({
 //     state,
 //     state: { productCategories },
@@ -54,7 +54,7 @@ import ReactDOM from 'react-dom'
 //       </div>
 //     </div>
 //   );
-  
+
 //   class Account extends React.Component {
 //     constructor(props) {
 //       super(props);
@@ -72,10 +72,10 @@ import ReactDOM from 'react-dom'
 //     }
 //     render() {
 //       return <UI setCategory={this.setCategory} state={this.state} />;
-      
+
 //     }
 //   }
-  
+
 //   // data
 //   const PRODUCTS = [
 //     { category: "Furniture", name: "Football" },
@@ -86,20 +86,20 @@ import ReactDOM from 'react-dom'
 //     { category: "design", name: "Nexus 7" },
 //     { category: "Decorative", name: "Holiday" }
 //   ];
-  
+
 //   // get unique category items
 //   const uniqueItems = (x, i, array) => array.indexOf(x) === i;
 //   const PRODUCT_CATEGORIES = PRODUCTS.map(prod => prod.category).filter(
 //     uniqueItems
 //   );
-  
+
 //   PRODUCT_CATEGORIES.push("all");
 //   PRODUCT_CATEGORIES.sort();
-  
+
 //   ReactDOM.render(
 //     <Account products={PRODUCTS} productCategories={PRODUCT_CATEGORIES} />,
 //     document.getElementById("root")
-    
+
 //   );
 //  export default CategoryList;
 
@@ -107,30 +107,69 @@ const Account = () => {
     return (
         <div className="container mt-5 carousel">
             <h1>i am from Account</h1>
-            
-            {/* {(typeof (popularObject.popular) == 'object') ?
-                        <div>
-                          {
-                            popularObject.popular.map((subpopularObject, index) => {
-                              <div key={index}>
-                                 <Link to={'/product/' + popularObject._id}>
-                    <img className="card-image" src={subpopularObject.imageUrl} alt="popular" />
-                  </Link>
-                                
-                              </div>
-                            }
-                            )
-                          }
-                        </div>
 
-                        :
-                        null
-           
-                        }
-               */}
-            
+
+
         </div>
     );
 };
 
 export default Account;
+
+
+// {
+//     products.map((popularObject, i) => (
+        //  <li key={i}>
+        // <div>
+        //     {
+        //         (typeof (popularObject.popular) == 'object') ?
+
+        //             <div >
+
+        //                 {
+
+        //                     popularObject.popular.map((subpopularobj, k) =>
+
+        //                         <div className="card-wrapper"  >
+        //                             <ul className="product">
+        //                                 <div className="card">
+        //                                     <div className="card-image">
+        //                                         <Link to={'/product/' + popularObject._id}>
+        //                                             <img src={subpopularobj.imageUrl} alt="popular" />
+        //                                         </Link>
+        //                                     </div>
+
+        //                                     <div className="details">
+        //                                         <div className="job-title">
+        //                                             <h4><p className="tag">Radhunir Rannaghor</p><Link to={'/product/' + popularObject._id}>
+
+        //                                                 {subpopularobj.name}
+        //                                             </Link><span className="job-title"></span> </h4>
+        //                                         </div>
+        //                                     </div>
+
+        //                                     <div className="job-title-price"> <h4> $  {subpopularobj.price}</h4></div>
+
+
+
+        //                                 </div>
+        //                             </ul>
+        //                         </div>
+
+        //                     )
+
+        //                 }
+
+
+        //             </div>
+
+        //             :
+        //             null
+        //     }
+
+
+        // </div>
+        // </li>
+
+//     ))
+// }

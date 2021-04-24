@@ -4,16 +4,18 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Link } from 'react-router-dom';
 import axios from 'axios';
-
+import { useDispatch, useSelector} from 'react-redux';
+import {listProducts} from '../actions/productActions';
 
 function ImageSlider(props) {
-  const [products, setProduct] = useState([]);
-  useEffect(() => {
-    const fetchData = async () => {
-      const { data } = await axios.get("/api/products/popular/recommended/allmenu");
-      setProduct(data);
-    }
-    fetchData();
+
+  // const [products, setProduct] = useState([]);
+  const productList=useSelector (state => state.productList);
+  const {products,loading,error}= productList;
+const dispatch= useDispatch();
+ useEffect(() => {
+  dispatch(listProducts());
+
     return () => {
 
     };
@@ -29,67 +31,67 @@ function ImageSlider(props) {
 
 
   return (
-
-    <Slider {...settings}>
+    loading ? <div>Loading..</div> :
+    error ? <div>{error}</div> :
+    <div>
       {
+        products.map((popularObject) => (
+          // <li key={popularObject._id}>
+          <div key={popularObject._id}>
+            {
+              (typeof (popularObject.popular) == 'object') ?
+                <Slider {...settings}>
 
-        products.map((popularObject, i) => (
-          <li key={popularObject._id}>
-            <div className="card-wrapper">
-
-              <ul className="product">
-                <div className="card">
-                  <Link to={'/product/' + popularObject._id}>
-                    <img className="card-image" src={
-                      (typeof (popularObject.popular) == 'object') ?
-                        <div>
-                          {
-                            popularObject.popular.map((subpopularObject, index) => {
-                              <div key={index}>
-                                {subpopularObject.imageUrl}
-                              </div>
-                            }
-                            )
-                          }
-                        </div>
-                        :
-                        null
-                    } alt="popular" />
-                  </Link>
-
-                  <div className="details">
-                    <div className="job-title">
-                      <h4><p className="tag">Radhunir Rannaghor</p><Link to={'/product/' + popularObject._id}>
-                        {
-                          (typeof (popularObject.popular) == 'object') ?
-                            <div>
-                              {
-                                popularObject.popular.map((subpopularobj, index) =>
-
-                                  <div key={index}>{subpopularobj.name}</div>
-                                )
-                              }
+                  {
+                    popularObject.popular.map((subpopularobj) =>
+                      <div key={subpopularobj._id} className="card-wrapper"  >
+                        <ul className="product">
+                          <div className="card">
+                            <div className="card-image">
+                              <Link to={'/product/' + popularObject._id}>
+                                <img src={subpopularobj.imageUrl} alt="popular" />
+                              </Link>
                             </div>
-                            :
-                            null
-                        }
 
-                      </Link><span className="job-title"></span> </h4>
-                    </div>
-                    <div className="job-title-price"> <h4> ${popularObject.popular[i].price}</h4></div>
+                            <div className="details">
+                              <div className="job-title">
+                                <h4><p className="tag">Radhunir Rannaghor</p><Link to={'/product/' + popularObject._id}>
 
-                  </div>
+                                  {subpopularobj.name}
+                                </Link><span className="job-title"></span> </h4>
+                              </div>
+                              <div className="job-title-price"> <h4> $  {subpopularobj.price}</h4></div>
+                            </div>
 
-                </div>
-              </ul>
-            </div>
-          </li>
+                            <div className="job-title-price"> <h4> $  {subpopularobj.price}</h4></div>
+
+
+                          </div>
+                        </ul>
+                      </div>
+
+                    )
+
+                  }
+
+
+                </Slider>
+                :
+                null
+
+            }
+
+
+
+          </div>
+          // </li>
 
         ))}
-    </Slider>
+    </div>
 
 
   )
 }
+
 
 export default ImageSlider

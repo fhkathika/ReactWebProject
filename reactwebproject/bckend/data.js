@@ -1,12 +1,12 @@
 export default
   {
     products: [
-      {
+    {
         popular: [
           {
             _id: '1',
             name: 'Nasi Goreng',
-            imageUrl: 'imagestest/3.jpg',
+            imageUrl: '/imagestest/3.jpg',
             rating: '5.0',
             deliveryTime: '45 mins',
             deliveryCharges: 'Free Delivery',
@@ -16,7 +16,7 @@ export default
           {
             _id: '2',
             name: 'Rendang',
-            imageUrl: 'imagestest/7.jpg',
+            imageUrl: '/imagestest/7.jpg',
             rating: '4.9',
             deliveryTime: '35 mins',
             deliveryCharges: 'Free Delivery',
@@ -26,7 +26,7 @@ export default
           {
             _id: '3',
             name: 'Nasi Padang',
-            imageUrl: 'imagestest/16.jpg',
+            imageUrl: '/imagestest/16.jpg',
             rating: '4.5',
             deliveryTime: '55 mins',
             deliveryCharges: 'Delivery charges 50 extra',
@@ -36,7 +36,7 @@ export default
           {
             _id: '7',
             name: 'Pece',
-            imageUrl: 'imagestest/13.jpg',
+            imageUrl: '/imagestest/13.jpg',
             rating: '4.0',
             deliveryTime: '75 mins',
             deliveryCharges: 'Free Delivery',
@@ -46,7 +46,7 @@ export default
           {
             _id: '4',
             name: 'Indomie',
-            imageUrl: 'imagestest/13.jpg',
+            imageUrl: '/imagestest/13.jpg',
             rating: '3.8',
             deliveryTime: '25 mins',
             deliveryCharges: 'Free Delivery',
@@ -58,7 +58,7 @@ export default
           {
             _id: '2',
             name: 'Rendang',
-            imageUrl: 'imagestest/7.jpg',
+            imageUrl: '/imagestest/7.jpg',
             rating: '4.9',
             deliveryTime: '35 mins',
             deliveryCharges: 'Free Delivery',
@@ -68,7 +68,7 @@ export default
           {
             _id: '1',
             name: 'Nasi Goreng',
-            imageUrl: 'imagestest/3.jpg',
+            imageUrl: '/imagestest/3.jpg',
             rating: '5.0',
             deliveryTime: '45 mins',
             deliveryCharges: 'Free Delivery',
@@ -78,7 +78,7 @@ export default
           {
             _id: '7',
             name: 'Pece',
-            imageUrl: 'imagestest/13.jpg',
+            imageUrl: '/imagestest/13.jpg',
             rating: '4.0',
             deliveryTime: '75 mins',
             deliveryCharges: 'Free Delivery',
@@ -90,7 +90,7 @@ export default
           {
             _id: '1',
             name: 'Nasi Goreng',
-            imageUrl: 'imagestest/3.jpg',
+            imageUrl: '/imagestest/2.jpg',
             rating: '5.0',
             deliveryTime: '45 mins',
             deliveryCharges: 'Free Delivery',
@@ -100,7 +100,7 @@ export default
           {
             _id: '2',
             name: 'Rendang',
-            imageUrl: 'imagestest/4.jpg',
+            imageUrl: '/imagestest/1.jpg',
             rating: '4.9',
             deliveryTime: '35 mins',
             deliveryCharges: 'Free Delivery',
@@ -110,7 +110,7 @@ export default
           {
             _id: '3',
             name: 'Nasi Padang',
-            imageUrl: 'imagestest/6.jpg',
+            imageUrl: '/imagestest/6.jpg',
             rating: '4.5',
             deliveryTime: '55 mins',
             deliveryCharges: 'Delivery charges 50 extra',
@@ -120,7 +120,7 @@ export default
           {
             _id: '4',
             name: 'Indomie',
-            imageUrl: 'imagestest/12.jpg',
+            imageUrl: '/imagestest/12.jpg',
             rating: '3.8',
             deliveryTime: '25 mins',
             deliveryCharges: 'Free Delivery',
@@ -130,7 +130,7 @@ export default
           {
             _id: '5',
             name: 'Rendang',
-            imageUrl: 'imagestest/6.jpg',
+            imageUrl: '/imagestest/6.jpg',
             rating: '4.9',
             deliveryTime: '35 mins',
             deliveryCharges: 'Free Delivery',
@@ -140,7 +140,7 @@ export default
           {
             _id: '6',
             name: "Nasi Goreng",
-            imageUrl: 'imagestest/7.jpg',
+            imageUrl: '/imagestest/7.jpg',
             rating: '5.0',
             deliveryTime: '45 mins',
             deliveryCharges: 'Free Delivery',
@@ -150,7 +150,7 @@ export default
           {
             _id: '7',
             name: 'Pece',
-            imageUrl: 'imagestest/1.jpg',
+            imageUrl: '/imagestest/8.jpg',
             rating: '4.0',
             deliveryTime: '75 mins',
             deliveryCharges: 'Free Delivery',
@@ -160,6 +160,7 @@ export default
         ]
       }
     ]
+  }
     // products: [
     //   {
     //     _id: '1',
@@ -202,4 +203,4 @@ export default
     //   },
 
     // ]
-  }
+  

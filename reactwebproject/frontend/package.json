@@ -1,6 +1,6 @@
 {
   "name": "reactfoodwebsite",
-  "proxy": "http://192.168.1.106:9000",
+  "proxy": "http://192.168.1.103:9000",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -14,10 +14,13 @@
     "react-icons": "^4.2.0",
     "react-items-carousel": "^2.8.0",
     "react-js-banner": "^0.5.2",
+    "react-redux": "^7.2.3",
     "react-responsive-image": "^5.0.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "react-slick": "^0.28.0",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0",
     "slick-carousel": "^1.8.1",
     "web-vitals": "^1.1.0"
   },

@@ -5,7 +5,7 @@ import Account from './pages/Account'
 import CategoryList from './components/CategoryList'
 import {BrowserRouter, Route,Switch} from 'react-router-dom'
 import Navbar from './components/Navbar'
-import ProductDetails from './components/ProductDetails'
+import ProductScreen from './components/ProductScreen'
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
      <Switch>
       <Route exact path="/" component={Home}/>
       <Route   exact path="/account" component={Account}/>
-      <Route  exact path="/product/:id" component={ProductDetails}/>
+      <Route  exact path="/product/:id" component={ProductScreen}/>
     
     <Home/>
       </Switch>
