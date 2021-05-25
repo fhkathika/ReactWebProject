@@ -5,53 +5,59 @@ export default
         popular: [
           {
             _id: '1',
-            name: 'Nasi Goreng',
-            imageUrl: '/imagestest/3.jpg',
+            name: 'Laddu',
+            imageUrl: '/imagestest/laddu.jpg',
             rating: '5.0',
             deliveryTime: '45 mins',
             deliveryCharges: 'Free Delivery',
             price: '150',
-            note: 'Extra special'
+            note: 'Extra special',
+            countInStock:'6'
+        
           },
           {
             _id: '2',
-            name: 'Rendang',
-            imageUrl: '/imagestest/7.jpg',
+            name: 'Setmenu',
+            imageUrl: '/imagestest/setMenu.jpg',
             rating: '4.9',
             deliveryTime: '35 mins',
             deliveryCharges: 'Free Delivery',
             price: '250',
-            note: 'Special'
+            note: 'Special',
+            countInStock:'6'
           },
           {
             _id: '3',
-            name: 'Nasi Padang',
-            imageUrl: '/imagestest/16.jpg',
+            name: 'PolaoRoast',
+            imageUrl: '/imagestest/polaoRoast.jpg',
             rating: '4.5',
             deliveryTime: '55 mins',
             deliveryCharges: 'Delivery charges 50 extra',
             price: '199',
-            note: 'Chilly'
+            note: 'Chilly',
+          countInStock:'6'
           },
           {
             _id: '7',
-            name: 'Pece',
-            imageUrl: '/imagestest/13.jpg',
+            name: 'Nachos',
+            imageUrl: '/imagestest/nachos.jpg',
             rating: '4.0',
             deliveryTime: '75 mins',
             deliveryCharges: 'Free Delivery',
             price: '150',
-            note: 'Special, Spicy'
+            note: 'Special, Spicy',
+            countInStock:'6'
           },
           {
             _id: '4',
-            name: 'Indomie',
-            imageUrl: '/imagestest/13.jpg',
+            name: 'Jorda',
+            imageUrl: '/imagestest/jorda.jpg',
             rating: '3.8',
             deliveryTime: '25 mins',
             deliveryCharges: 'Free Delivery',
             price: '150',
-            note: 'Special, Spicy'
+            note: 'Special, Spicy',
+            countInStock:'6'
           }
         ],
         recommended: [

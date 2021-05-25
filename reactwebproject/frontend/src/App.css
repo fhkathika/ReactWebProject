@@ -161,7 +161,7 @@ h6 {
 .defaultBannerImg,
 .roomsBannerImg {
   min-height: calc(100vh - 66px);
-  background: url("./images/hImg.jpg") center/cover no-repeat;
+  background: url("./images/cover.jpg") center/cover no-repeat;
   display: flex;
   align-items: center;
   background-attachment: fixed;
@@ -170,7 +170,7 @@ h6 {
   justify-content: center;
 }
 .roomsBannerImg {
-  background-image: url("./images/hImg.jpg");
+  background-image: url("./images/cover.jpg");
   min-height: 60vh;
 }
 /* .roomsBannerImg:hover {

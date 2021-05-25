@@ -35,27 +35,27 @@ const dispatch= useDispatch();
     error ? <div>{error}</div> :
     <div>
       {
-        products.map((popularObject) => (
+        products.map((popularObject,i) => (
           // <li key={popularObject._id}>
-          <div key={popularObject._id}>
+          <div key={i}>
             {
               (typeof (popularObject.popular) == 'object') ?
                 <Slider {...settings}>
 
                   {
-                    popularObject.popular.map((subpopularobj) =>
-                      <div key={subpopularobj._id} className="card-wrapper"  >
+                    popularObject.popular.map((subpopularobj,k) =>
+                      <div key={k} className="card-wrapper"  >
                         <ul className="product">
                           <div className="card">
-                            <div className="card-image">
-                              <Link to={'/product/' + popularObject._id}>
+                            <div className="card-image" key={k}>
+                              <Link to={'/product/' + subpopularobj._id}>
                                 <img src={subpopularobj.imageUrl} alt="popular" />
                               </Link>
                             </div>
 
                             <div className="details">
                               <div className="job-title">
-                                <h4><p className="tag">Radhunir Rannaghor</p><Link to={'/product/' + popularObject._id}>
+                                <h4><p className="tag">Radhunir Rannaghor</p><Link to={'/product/' + subpopularobj._id}>
 
                                   {subpopularobj.name}
                                 </Link><span className="job-title"></span> </h4>
